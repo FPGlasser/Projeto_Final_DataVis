@@ -1,0 +1,9 @@
+.university_container{
+  display: flex;
+  gap: 10px;
+}
+
+.university__titles{
+  font-size: 0.9rem;
+  font-weight: 600;
+}

@@ -1,0 +1,25 @@
+.perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.perfil_id{
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.perfil__iconsNetwork{
+  display: flex;
+  gap: 10px;
+  color: #FFFFFF;
+}
+
+.perfil__iconsNetwork{
+  ;
+}
