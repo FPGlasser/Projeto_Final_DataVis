@@ -10,13 +10,14 @@ function Perfil() {
       const {isToggled, toggled, noToggled} = sidebarContext;
       const context = isToggled ? toggled : noToggled;
       console.log(context["avatar"].size)
+
       return(
         <div className='perfil'>
           <div className="perfil__img">
-            <img src={Avatar} style={{width: context["avatar"].size, borderRadius: '50%'}} alt="avatar" />
+            <img className='avatar' src={Avatar} style={{width: context["avatar"].size, borderRadius: '50%'}} alt="avatar" />
           </div>
           <div className="perfil_id">
-            <span className="perfil__id--items" style={{display: context.displayMode}}>Glasser Fernando Paulo</span>
+            <span className="perfil__id--items" style={{display: context.displayMode, transition: '0.5s ease-in-out'}}>Glasser Fernando Paulo</span>
             
             <div className="perfil__iconsNetwork" style={{flexDirection: context["avatar"].iconOrintation}}>
               <a href='https://www.linkedin.com/in/glasser-fernando-paulo-0ab50a160/' className="perfil__iconsNetwork--items">

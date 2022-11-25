@@ -1,14 +1,14 @@
 .App {
   padding: 0px;
   margin: 0px;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-
+  height: 100%;
+  width: 100%;
+  /*background-color: brown;*/
+  display: flex;
+  flex-direction: row;
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @media only screen and (min-width: 600px){
   

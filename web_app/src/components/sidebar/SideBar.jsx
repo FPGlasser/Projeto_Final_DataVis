@@ -3,8 +3,8 @@ import './Sidebar.css'
 import University from '../university/University';
 import Perfil from '../perfil/Perfil';
 import Nav from '../nav/Nav';
-import Menu_Icon from '../assets/icons/menu_icon.svg'
 import { SidebarContext } from '../../context/sidebarContext/SideBarContext';
+import MenuIcon from '../../context/sidebarContext/MenuIcon';
 
 function SideBar() {
   return (
@@ -16,9 +16,7 @@ function SideBar() {
 
         <div className='sidebar' style={{width: context}}>
         <div>
-        <div className="menu_icon__Container">
-          <img src={Menu_Icon} alt="" />
-        </div>
+        <MenuIcon />
         <University />
         </div>
         <Perfil />

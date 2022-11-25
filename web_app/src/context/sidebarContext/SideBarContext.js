@@ -7,7 +7,7 @@ export default class SidebarContextProvider extends Component {
     isToggled: true,
 
     toggled:{
-      sidebarWidth: '70px',
+      sidebarWidth: '60px',
       displayMode: 'none',
       avatar:{
         size: '50px',
@@ -16,7 +16,7 @@ export default class SidebarContextProvider extends Component {
     },
 
     noToggled:{
-      sidebarWidth: '300px',
+      sidebarWidth: '320px',
       displayMode: 'flex',
       avatar:{
         size: '120px',
@@ -25,13 +25,13 @@ export default class SidebarContextProvider extends Component {
     },
   }
 
-  toggledSidebar = ()=> {
-    this.setState(!this.state.isToggled);
+  toggleSidebar = ()=> {
+    this.setState({isToggled: !this.state.isToggled});
   }
 
   render() {
     return (
-      <SidebarContext.Provider value={{...this.state, toggledSidebar: this.toggledSidebar}}>
+      <SidebarContext.Provider value={{...this.state, toggleSidebar: this.toggleSidebar}}>
           {this.props.children}
       </SidebarContext.Provider>
     )

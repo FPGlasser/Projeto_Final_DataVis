@@ -6,7 +6,13 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-color:chocolate;
+    background-color: #0274b6;
+    background-image: url('');
+}
+
+#root{
+  width: 100%;
+  height: 100vh;
 }
 
 code {

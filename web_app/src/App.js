@@ -4,7 +4,7 @@ import Analises from './pages/analises/Analises';
 import Dashboard from './pages/dashboard/Dashboard';
 import SidebarContextProvider from './context/sidebarContext/SideBarContext.js'
 import './App.css';
-
+import MainContainer from './components/main_container/MainContainer';
 //importações para teste componentes
 import Header from './components/header/Header';
 import SideBar from './components/sidebar/SideBar';
@@ -14,16 +14,16 @@ function App(){
     <div className="App">
       <SidebarContextProvider>
         <SideBar />
-      </SidebarContextProvider>
     
-      <div className='main'>
+      <MainContainer>
         <Header/>
         <Routes>
           <Route path='/' element={<Description />} />
           <Route path='/analises' element={<Analises />} />
           <Route path='/dashboard'element={<Dashboard />} />
         </Routes>
-      </div>
+      </MainContainer>
+      </SidebarContextProvider>
     </div>
   );
 }
