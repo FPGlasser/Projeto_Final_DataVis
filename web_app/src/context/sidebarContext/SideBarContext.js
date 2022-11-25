@@ -4,7 +4,7 @@ export const SidebarContext = createContext();
 
 export default class SidebarContextProvider extends Component {
   state = {
-    isToggled: true,
+    isToggled: false,
 
     toggled:{
       sidebarWidth: '60px',

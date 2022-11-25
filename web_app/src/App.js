@@ -6,7 +6,6 @@ import SidebarContextProvider from './context/sidebarContext/SideBarContext.js'
 import './App.css';
 import MainContainer from './components/main_container/MainContainer';
 //importações para teste componentes
-import Header from './components/header/Header';
 import SideBar from './components/sidebar/SideBar';
 
 function App(){
@@ -16,7 +15,7 @@ function App(){
         <SideBar />
     
       <MainContainer>
-        <Header/>
+       
         <Routes>
           <Route path='/' element={<Description />} />
           <Route path='/analises' element={<Analises />} />

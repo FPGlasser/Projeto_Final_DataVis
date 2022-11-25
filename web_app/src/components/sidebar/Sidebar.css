@@ -39,6 +39,15 @@
   cursor: pointer;
 }
 
+.menu_icon__Container{
+  align-items: center;
+}
+
+#projectTitle{
+  font-size: 1.4rem;
+  margin-right: 20px;
+  font-weight: 600;
+}
 /*
 @media only screen and (max-width: 900px){
   .sidebar{

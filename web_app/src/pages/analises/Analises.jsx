@@ -2,7 +2,9 @@ import React from 'react'
 import './Analises.css'
 function Analises() {
   return (
-    <div>Analises</div>
+    <div id='analises'>
+      
+    </div>
   )
 }
 
