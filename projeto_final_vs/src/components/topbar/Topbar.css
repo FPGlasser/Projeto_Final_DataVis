@@ -1,0 +1,20 @@
+#topbar{
+  padding-left: 50px;
+  position: fixed;
+  display: flex;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  align-items: center;
+  top: 0;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+  height: 80px;
+  
+}
+
+#topbar_title > span{
+  font-size: 1.8rem;
+  font-weight: 600;
+ 
+}

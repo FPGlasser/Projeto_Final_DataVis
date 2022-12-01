@@ -14,7 +14,7 @@ function SideBar() {
       
       return(
 
-        <div className='sidebar' style={{width: context}}>
+        <div className='sidebar background_blur' style={{width: context}}>
         <div>
         <MenuIcon />
         <University />

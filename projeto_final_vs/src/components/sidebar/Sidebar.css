@@ -1,0 +1,89 @@
+#sidebar{
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  /* From https://css.glass */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 0px 0px 20px 0px;
+  background-color: #FFFFFF;
+ 
+}
+
+#app_title_container{
+  height: 80px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+  width: 100%;
+  gap: 20px;
+}
+
+#app_title_container > div{
+  font-size: 3rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+#nav_elements{
+  width: 100%;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  row-gap: 10px;
+}
+
+#nav_elements__list{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+}
+
+.navelements__links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: 0.5 ease-out;
+}
+
+#togglesidebarBtn{
+  margin-right: -100%;
+  cursor: pointer;
+}
+
+.navelements__links > *{
+  font-size: 1.2rem;
+  transition: 0.5s ease-in-out;
+}
+
+#nav_elements__title{
+  display: inherit;
+  width: 60%;
+  align-items: flex-start;
+}
+
+.perfil > img{
+  transition: 0.5s ease-out;
+  border-radius: 50%;
+}

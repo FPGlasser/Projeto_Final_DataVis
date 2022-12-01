@@ -6,7 +6,7 @@ export default class SidebarContextProvider extends Component {
   state = {
     isToggled: false,
 
-    toggled:{
+    toggled: {
       sidebarWidth: '60px',
       displayMode: 'none',
       avatar:{
@@ -15,7 +15,7 @@ export default class SidebarContextProvider extends Component {
       }
     },
 
-    noToggled:{
+    noToggled: {
       sidebarWidth: '320px',
       displayMode: 'flex',
       avatar:{
