@@ -12,21 +12,25 @@ import './Main.css'
 function Main() {
   return (
     <SidebarContext.Consumer>{(sidebarContext)=>{
+      
       const {isMinimized, sidebarMinimized, sidebarMaximized } = sidebarContext
       const sidebar = isMinimized ? sidebarMinimized : sidebarMaximized;
+      
       return(
+
         <div id='main_section' style={{paddingLeft: sidebar.sidebarWidth}}>
 
-        <Topbar/>
-        <DataContextProvider>
-        <Routes>
-            <Route path='/' element={<Description />}></Route>
-            <Route path='/analise' element={<Analyses />}></Route>
-            <Route path='/dashboard' element={<Dashboard />}></Route>
-        </Routes>
-        </DataContextProvider>
+          <Topbar/>
+          
+          <DataContextProvider>
+            <Routes>
+                <Route path='/' element={<Description />}></Route>
+                <Route path='/analise' element={<Analyses />}></Route>
+                <Route path='/dashboard' element={<Dashboard />}></Route>
+            </Routes>
+          </DataContextProvider>
         
-      </div>
+        </div>
     )}}
     </SidebarContext.Consumer>
   )

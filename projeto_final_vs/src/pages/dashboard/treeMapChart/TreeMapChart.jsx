@@ -20,44 +20,44 @@ estadoCivil.forEach(element => {
 
 export default class TreeMapChart extends Component {
 
-    constructor(props) {
-      super(props);
+  constructor(props) {
+    super(props);
 
-      this.state = {
-      
-        series: [
-          {
-            data: estadoCivil.map((element, index) => {
-              return {x: element, y: countEstadoCivil[index]}
-            })
-            
-          }
-        ],
-
-        options: {
-          plotOptions: {
-            treemap: {
-              customScale: 1,
-              distributed: true,
-            }
-          },
-          
-          colors: ColorMap.reverse(), 
-          
-          legend: {
-            show: false
-          },
-          chart: {
-            height: 350,
-            type: 'treemap',
+    this.state = {
     
-          },
-          title: {
-            text: 'Estado Civil por Qunatidade'
+      series: [
+        {
+          data: estadoCivil.map((element, index) => {
+            return {x: element, y: countEstadoCivil[index]}
+          })
+        }
+      ],
+
+      options: {
+        plotOptions: {
+          treemap: {
+            customScale: 1,
+            distributed: true,
           }
-        },  
-      };
-    }
+        },
+        
+        colors: ColorMap.reverse(), 
+        
+        legend: {
+          show: true
+        },
+
+        chart: {
+          height: 350,
+          type: 'treemap',
+        },
+
+        title: {
+          text: 'Estado Civil por Qunatidade'
+        }
+      },  
+    };
+  }
 
   
 

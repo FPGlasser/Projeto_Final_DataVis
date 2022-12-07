@@ -40,8 +40,32 @@ body > #root{
   display: flex;
   justify-content: center;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  background-color: #23ec10;
-  color: rgb(0, 0, 0);
+  background-color: #0876dd;
+  color: #FFFFFF;
+}
+
+#markdownText{
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 16px;
+  text-align: justify;
+  
+}
+
+.textParagraphM{
+  font-size: 1.2rem;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+}
+td{
+  padding: 10px;
 }
 
 

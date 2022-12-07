@@ -30,9 +30,11 @@ export default class PieChart extends Component {
       series: [data.filter(item => item.Target === "yes").length, 
                 data.filter(item => item.Target === "no").length],
       options: {
+        
         title: {
           text: 'Quantidade dos Sim e Não'
         },
+
         chart: {
           width: 380,
           type: 'donut',
@@ -42,6 +44,7 @@ export default class PieChart extends Component {
             }
           }
         },
+
         plotOptions: {
           pie: {
             customScale: 1,
@@ -66,7 +69,6 @@ export default class PieChart extends Component {
           }
         }]
       },
-    
     
     };
   }

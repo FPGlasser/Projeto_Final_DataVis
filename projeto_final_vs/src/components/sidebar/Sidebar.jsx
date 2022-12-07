@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import SidebarToggle from './SidebarToggle';
-import {MdQueryStats, MdDashboard, MdOutlineDescription} from 'react-icons/md'
-import {IconContext} from 'react-icons';
+import { MdQueryStats, MdDashboard, MdOutlineDescription } from 'react-icons/md'
+import { IconContext } from 'react-icons';
 import { SidebarContext } from '../contexts/sidebarContext/SidebarContext';
-import brasao from '../../assets/images/brasaoufc.png'
-import avatar from '../../assets/images/avatar.png'
-import './Sidebar.css'
+import brasao from '../../assets/images/brasaoufc.png';
+import avatar from '../../assets/images/avatar.png';
+import './Sidebar.css';
+
 
 function Sidebar() {
+  
   return (
     <SidebarContext.Consumer>{(sidebarContext)=>{
       
@@ -16,6 +18,7 @@ function Sidebar() {
       const sidebar = isMinimized ? sidebarMinimized : sidebarMaximized;
 
       return(  
+
         <IconContext.Provider value={{size: '32px'}}>
 
           <div id='sidebar' style={{width: sidebar.sidebarWidth}}>
@@ -35,15 +38,19 @@ function Sidebar() {
               <img src={avatar} alt="avatar" style={{width: sidebar.avatarSize}}/>
               <div>
                 <span style={{display: sidebar.displayTexts}}>Glasser Fernando Paulo</span>
+                <span style={{display: sidebar.displayTexts, padding: '10px', fontSize: '0.75rem'}}>Estudante do Curso de Engenharia da Computação</span>
+                <span style={{display: sidebar.displayTexts, textAlign: 'justify', padding: '36px'}}> Projeto final da cadeira de Visualização de Dados, semestre 2022.2</span>
+                <span style={{display: sidebar.displayTexts}}>Professora: Emanuele Santos</span>
                 <div id="networkicons">
 
                 </div>
               </div>
             </div>
+            
             <div id="nav_elements">
 
               <div id="nav_elements__title">
-                <h3 style={{display: sidebar.displayTexts}}>Menu</h3>
+                <h3 style={{display: sidebar.displayTexts}}>Menu Navegação</h3>
               </div>
 
               <ul id='nav_elements__list'>
@@ -73,6 +80,7 @@ function Sidebar() {
             </div>
           </div>
           </div>
+
         </IconContext.Provider>
       )
     }}</SidebarContext.Consumer>
